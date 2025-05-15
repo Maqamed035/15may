@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ümumi quruluş */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  text-align: center;
+}
+
+.App nav {
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #dcdcdc;
+}
+
+nav a.active,
+nav a:focus {
+  background-color: #a020f0;
+  color: white;
+}
+
+h2 {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #a020f0;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin: 6px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #8a2be2;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input[type='number'] {
+  width: 60px;
+  font-size: 18px;
+  padding: 8px;
+  margin: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Saat, Saniyəölçən və Taymer bölmələri */
+.time-display {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  color: #444;
+}
+
+/* Reaksiya effektləri */
+@media (max-width: 600px) {
+  .time-display {
+    font-size: 48px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  input[type='number'] {
+    width: 50px;
+  }
+}
